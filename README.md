@@ -4,6 +4,26 @@ I'm going to adopt PWA to my web applications and those web apps are heavily usi
 
 # Installation and Usage
 
+Add these to your webpack config as aliases.
+
+> `__dirname, "./node_modules/` may vary based on your installation
+
+```
+module.exports = {
+    ...
+    resolve: {
+        extensions: [".ts", ".tsx", ".js"],
+        alias: {
+          "axios/lib": path.resolve(__dirname, "./node_modules/axios/lib"),
+          "axios/lib/core/buildFullPath": path.resolve(__dirname, "./node_modules/axios/lib/core/buildFullPath"),
+          "axios/lib/core/settle": path.resolve(__dirname, "./node_modules/axios/lib/core/settle"),
+          "axios/lib/helpers/buildURL": path.resolve(__dirname, "./node_modules/axios/lib/helpers/buildURL"),
+          "axios/lib/utils": path.resolve(__dirname, "./node_modules/axios/lib/utils"),
+        }
+    },
+}
+```
+
 You can install the adapter directly from this repository URL or feel free to copy its source code to your project.
 
 ``` sh

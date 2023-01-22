@@ -1,7 +1,7 @@
 {
-    "name": "@vespaiach/axios-fetch-adapter",
-    "version": "0.3.1",
-    "description": "Fetch adapter for axios",
+    "name": "sudiptochoudhury/axios-fetch-adapter",
+    "version": "0.3.1.1",
+    "description": "Fetch adapter for axios with fixes",
     "main": "index.js",
     "module": "index.js",
     "types": "index.d.ts",
@@ -12,19 +12,22 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/vespaiach/axios-fetch-adapter.git"
+        "url": "git+https://github.com/sudiptochoudhury/axios-fetch-adapter.git"
     },
     "keywords": [
         "axios",
         "adapter",
         "fetch"
     ],
-    "author": "nta.toan@gmail.com",
+    "author": {
+        "name": "sudiptochoudhury",
+        "email": "mail@sudipto.net"
+    },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/vespaiach/axios-fetch-adapter/issues"
+        "url": "https://github.com/sudiptochoudhury/axios-fetch-adapter/issues"
     },
-    "homepage": "https://github.com/vespaiach/axios-fetch-adapter#readme",
+    "homepage": "https://github.com/sudiptochoudhury/axios-fetch-adapter",
     "devDependencies": {
         "axios": "^0.27.2",
         "np": "^7.6.1",
