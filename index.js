@@ -2,7 +2,7 @@ import axios from 'axios';
 import settle from 'axios/unsafe/core/settle.js';
 import buildURL from 'axios/unsafe/helpers/buildURL.js';
 import buildFullPath from 'axios/unsafe/core/buildFullPath.js';
-import axiosLibUtils from 'axios/unsafe/js';
+import axiosLibUtils from 'axios/unsafe/utils.js';
 const { isUndefined, isFormData } = axiosLibUtils
 
 /**
