@@ -2,7 +2,7 @@ import axios from 'axios';
 import settle from 'axios/unsafe/core/settle.js';
 import buildURL from 'axios/unsafe/helpers/buildURL.js';
 import buildFullPath from 'axios/unsafe/core/buildFullPath.js';
-import axiosLibUtils from 'axios/unsafe/utils.js';
+import axiosLibUtils from 'axios/unsafe/js';
 const { isUndefined, isFormData } = axiosLibUtils
 
 /**
@@ -107,7 +107,7 @@ function createRequest(config) {
 
         // In these cases the browser will automatically set the correct Content-Type,
         // but only if that header hasn't been set yet. So that's why we're deleting it.
-        if (utils.isFormData(options.body)) {
+        if (isFormData(options.body)) {
             headers.delete('Content-Type');
         }
     }
@@ -128,7 +128,7 @@ function createRequest(config) {
     }
     // This config is similar to XHR’s withCredentials flag, but with three available values instead of two.
     // So if withCredentials is not set, default value 'same-origin' will be used
-    if (!utils.isUndefined(config.withCredentials)) {
+    if (!isUndefined(config.withCredentials)) {
         options.credentials = config.withCredentials ? 'include' : 'omit';
     }
 
