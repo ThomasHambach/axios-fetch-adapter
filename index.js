@@ -1,8 +1,8 @@
 import axios from 'axios';
-import settle from 'axios/lib/core/settle';
-import buildURL from 'axios/lib/helpers/buildURL';
-import buildFullPath from 'axios/lib/core/buildFullPath';
-import axiosLibUtils from 'axios/lib/utils';
+import settle from 'axios';
+import buildURL from 'axios';
+import buildFullPath from 'axios';
+import axiosLibUtils from 'axios';
 const { isUndefined, isFormData } = axiosLibUtils
 
 /**
