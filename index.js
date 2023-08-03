@@ -1,8 +1,9 @@
 import axios from 'axios';
-import settle from 'axios';
-import buildURL from 'axios';
-import buildFullPath from 'axios';
-import utils from 'axios';
+import settle from 'axios/unsafe/core/settle.js';
+import buildURL from 'axios/unsafe/helpers/buildURL.js';
+import buildFullPath from 'axios/unsafe/core/buildFullPath.js';
+import axiosLibUtils from 'axios/unsafe/utils.js';
+const { isUndefined, isFormData } = axiosLibUtils
 
 /**
  * - Create a request object
